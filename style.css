@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#weatherResult, #forecastResult {
+    margin: 20px 0;
+}
+
+.forecast-item {
+    display: inline-block;
+    width: 150px; /* Adjust width as needed */
+    margin: 10px;
+    border-radius: 5px; /* Added for rounded corners */
+    overflow: hidden; /* Added to ensure child elements respect borders */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+h4, h5 {
+    margin: 10px 0;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+/* Gradient buttons */
+.btn-primary {
+    background: linear-gradient(45deg, #00aaff, #0055ff);
+    border: none;
+    color: white;
+}
+
+/* Cloud background */
+body.cloud-background {
+    background-image: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGNsb3VkfGVufDB8fHx8MTY5Nzc2MTc3OA&ixlib=rb-1.2.1&q=80&w=1080');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Weather-based colors */
+.forecast-clear {
+    background-color: #f9d71c; /* Sunny yellow */
+    color: black;
+}
+
+.forecast-rain {
+    background-color: #4a90e2; /* Rainy blue */
+    color: white;
+}
+
+.forecast-clouds {
+    background-color: #95a5a6; /* Cloudy gray */
+    color: white;
+}
+
+.forecast-snow {
+    background-color: #d0e6f7; /* Snowy light blue */
+    color: black;
+}
+
+.forecast-default {
+    background-color: #f0f0f0; /* Default light color */
+    color: black;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .forecast-item {
+        width: 100px;
+    }
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+}
